@@ -108,6 +108,7 @@
     }
   }
   &_fixed {
+    position: fixed;
     background-color: rgba(19,41,62, 0.5);
     backdrop-filter: blur(12px);
     transform: translateY(-20px);
@@ -177,5 +178,20 @@
   }
   span {
     line-height: 1;
+  }
+}
+
+
+.is-inner-page .header {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+  background-image: url('../img/header-bg.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  &.header_fixed {
+    position: fixed;
+    background-image: none;
   }
 }
