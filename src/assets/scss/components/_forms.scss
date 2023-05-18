@@ -1,0 +1,115 @@
+.form {
+  &__label {
+    position: relative;
+    padding: 2px;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(270deg, rgba(255,255,255,0.4990371148459384) 30%, rgba(255,255,255,0) 45%, rgba(255,255,255,1) 60%);
+      border-radius: 50px;
+    }
+  }
+  &__input {
+    position: relative;
+    z-index: 10;
+    background: rgba(130, 162, 185, 0.9);
+    border-radius: 50px;
+    text-align: center;
+    border: none;
+    height: 50px;
+    width: 370px;
+    max-width: 100%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 100%;
+    @include r(480) {
+      width: 100%;
+    }
+    &::placeholder {
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+  &__group {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    @include r(960) {
+      flex-direction: column;
+    }
+  }
+  &__submit {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin: 0 auto;
+    transition: opacity .3s ease-in-out;
+    &:disabled {
+      background-color: $orange;
+      cursor: not-allowed;
+      pointer-events: all;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// custom checkbox
+.checkbox {
+  display: none;
+  &__label {
+    position: relative;
+    display: block;
+    margin-bottom: 0;
+    padding-left: 39px;
+    font-size: 14px;
+    line-height: 32px;
+    color: #909BAD;
+    cursor: pointer;
+    a {
+      text-decoration: underline;
+    }
+  }
+  & + &__pane {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(130, 162, 185, 0.5);
+    transition: background-color .2s ease-in-out;
+  }
+  & + &__pane::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 11px;
+    height: 9px;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='9' viewBox='0 0 11 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 5.025L4.33333 8L10 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    //opacity: 0;
+    //transition: opacity .2s ease-in-out;
+  }
+  &:checked + &__pane {
+    background-color: $orange;
+  }
+}

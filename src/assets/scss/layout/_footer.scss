@@ -1,0 +1,54 @@
+.footer {
+  padding: 55px 0 25px;
+  background-color: #13293E;
+  &__logo svg {
+    margin-bottom: 10px;
+  }
+  &__contacts {
+    padding-left: 15px;
+    list-style-type: disc;
+  }
+  &__item {
+    font-size: 15px;
+    line-height: 18px;
+    color: #fff;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    @include r(768) {
+      margin: 15px 0;
+      justify-content: space-between;
+    }
+  }
+  &__habr {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: underline;
+    color: #4091DB;
+  }
+  &__copyright {
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    &_right {
+      text-align: right;
+    }
+    a {
+      text-decoration: underline;
+    }
+  }
+}

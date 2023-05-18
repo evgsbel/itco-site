@@ -1,0 +1,198 @@
+.sub-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 50;
+  min-width: 130px;
+  max-width: 100%;
+  //background: rgba(255, 255, 255, 0.4);
+  //backdrop-filter: blur(10px);
+  background-color: rgba(126,193,231,0.9);
+  border-radius: 0 20px 20px 20px;
+  border: 1px solid #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s ease-in-out;
+  &__item {
+    position: relative;
+    padding: 1px;
+    text-align: center;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: linear-gradient(180deg, #E24230 0%, rgba(255, 255, 255, 0) 100%);
+      transition: opacity .3s ease-in-out;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%);
+    }
+    &:first-child {
+      a {
+      border-radius: 0 20px 0 0;
+      }
+      &::before {
+        border-radius: 0 20px 0 0;
+      }
+    }
+    &:last-child {
+      a {
+      border-radius: 0 0 20px 20px;
+      }
+      &::before {
+        border-radius: 0 0 20px 20px;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+  &__link {
+    position: relative;
+    z-index: 10;
+    display: block;
+    padding: 9px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: #212E33;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    &:hover {
+      color: #fff;
+      background-color: $orange;
+    }
+  }
+}
+
+.nav {
+  padding-top: 20px;
+  @include r(1024) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 150;
+    padding: 40px;
+    width: 80vw;
+    min-height: 100vh;
+    background-color: #13293E;
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+  }
+  &.is-open {
+    transform: translateX(0);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include r(1024) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+  &__item {
+    position: relative;
+    color: #fff;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #E24230 0%, rgba(255, 255, 255, 0.2) 100%);
+      transition: width .3s ease-in-out;
+    }
+    &:hover {
+      color: #fff;
+      &::after {
+        width: 100%;
+      }
+      .sub-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &_sub {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        right: -18px;
+        width: 10px;
+        height: 4px;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='4' viewBox='0 0 10 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 0H0L5 4L10 0Z' fill='white'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+  &__link {
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    @include r(1280) {
+      font-size: 14px;
+    }
+    @include r(1024) {
+      font-size: 18px;
+    }
+  }
+}
+
+.burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 39px;
+  height: 19px;
+  margin: 0 auto;
+  @include r(1024) {
+    display: flex;
+  }
+  span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: none;
+  @include r(1024) {
+    display: block;
+  }
+}

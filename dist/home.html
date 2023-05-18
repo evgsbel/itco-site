@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Home Page</title>
+    <!-- build:css -->
+    <link rel="stylesheet" href="assets/vendor/css/animate.css">
+    <link rel="stylesheet" href="assets/vendor/css/swiper.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<!-- endbuild -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+
+<body class="is-home-page">
+    <header class="header">
+      <div class="container">
+        <div class="row header__row">
+          <div class="col-8 col-sm-3 col-lg-2 order-1 order-lg-0">
+            <a href="/" class="header__logo logo">
+              <svg width="150" height="45">
+                <use xlink:href="assets/img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="col-lg-7 col-sm-1 col-2  position-static">
+            <button class="burger btn-reset js-open-mobile-menu">
+              <span></span><span></span><span></span>
+            </button>
+            <nav class="nav header__nav js-mobile-menu">
+              <button class="btn-reset close js-close-mobile-menu">
+                <svg width="35" height="35">
+                  <use xlink:href="/assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">Услуги</a>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Модули</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Проекты</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Мероприятия</a></li>
+                <li class="nav__item nav__item nav__item_sub">
+                  <a href="" class="nav__link">О компании</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item"><a href="" class="sub-menu__link">О нас</a></li>
+                    <li class="sub-menu__item"><a href="" class="sub-menu__link">Новости</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-2 col-sm-8 col-lg-3 col-md-8 order-2 order-lg-0">
+            <a href="tel:+74999597146" class="top-phone header__phone"><span>+7 499 959 71 46</span></a>
+            <a href="" class="btn btn-reset top-presentation header__presentation header__presentation_mini">
+              <svg width="16" height="22">
+                <use xlink:href="assets/img/sprite.svg#icon-pdf"></use>
+              </svg>
+            </a>
+            <a href="" class="btn btn-reset top-presentation header__presentation">
+              <svg width="16" height="22">
+                <use xlink:href="assets/img/sprite.svg#icon-pdf"></use>
+              </svg>
+              <span>Скачать презентацию</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="main">
+        <section class="hero">
+          <div class="container h-100">
+            <div class="row h-100">
+              <div class="col-12 h-100">
+                <div class="hero__inner  h-100">
+                  <div class="hero__slider hero-slider swiper js-hero-slider">
+                    <div class="swiper-wrapper">
+                      <div class="hero-slider__item swiper-slide">
+                        <p class="hero-slider__caption">Кто мы?</p>
+                        <p class="hero-slider__description">Компания Айтико - предлагает полный спектр IT-решений в медицине,
+                          которые помогают лечебным учреждениям наладить хранение и обмен информацией</p>
+                        <button class="btn-reset btn hero-slider__btn">Узнать больше</button>
+                      </div>
+                      <div class="hero-slider__item swiper-slide">
+                        <p class="hero-slider__caption">Почему мы?</p>
+                        <p class="hero-slider__description">Мы обладаем уникальным подходом, который позволяет разрабатывать
+                          технологии в масштабе всего лечебного учреждения. Наши IT решения предназначены для обработки данных в
+                          радиологии, кардиологии, маммографии и ортопедии.</p>
+                        <button class="btn-reset btn hero-slider__btn">Узнать больше</button>
+                      </div>
+                      <div class="hero-slider__item swiper-slide">
+                        <p class="hero-slider__caption">Какова наша миссия?</p>
+                        <p class="hero-slider__description">Наша компания стремиться популяризировать передовые технологии
+                          визуализации, хранения и постобработки с последующим доступом к ним. Целью является повышение качества
+                          диагностики и лечение пациентов, а так же упрощение процесса работы на всех уровнях.</p>
+                        <button class="btn-reset btn hero-slider__btn">Узнать больше</button>
+                      </div>
+                    </div>
+                    <div class="hero-slider__navigation">
+                      <div class="swiper-button-next">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+                        </svg>
+                      </div>
+                      <div class="swiper-pagination hero-slider__pagination"></div>
+                      <div class="swiper-button-prev">
+                        <svg>
+                          <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="after-hero">
+          <section class="service">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-11 col-xl-9 offset-xl-1">
+                  <div class="swiper js-service-slider service__slider service__wr">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide ">
+                        <div class="service__item">
+                          <div class="service__heading">
+                            <svg class="service__icon" width="38" height="37">
+                              <use xlink:href="assets/img/sprite.svg#icon-srv"></use>
+                            </svg>
+                          </div>
+                          <div class="service__content">
+                            <p class="service__caption">Поставка и внедрение комплексных PACS+RIS систем</p>
+                            <p class="service__description">Интеграция клинических приложений с PACS/МИС и прочими системами.
+                              Сервисное обслуживание</p>
+                          </div>
+                          <a href="" class="service__link"></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide ">
+                        <div class="service__item">
+                          <div class="service__heading">
+                            <svg class="service__icon" width="38" height="37">
+                              <use xlink:href="assets/img/sprite.svg#icon-srv"></use>
+                            </svg>
+                          </div>
+                          <div class="service__content">
+                            <p class="service__caption">Поставка медицинских систем визуализации</p>
+                            <p class="service__description">А также помощь в подборе подходящей продукции и введение в
+                              эксплуатацию</p>
+                          </div>
+                          <a href="" class="service__link"></a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide ">
+                        <div class="service__item">
+                          <div class="service__heading">
+                            <svg class="service__icon" width="38" height="37">
+                              <use xlink:href="assets/img/sprite.svg#icon-srv"></use>
+                            </svg>
+                          </div>
+                          <div class="service__content">
+                            <p class="service__caption">Интегрированные гибридные операционные</p>
+                            <p class="service__description">Отображение видео со всех источников в операционной, на дисплее
+                              перед
+                              хирургом, а так же сохранение видео хода операций и не только в PACS</p>
+                          </div>
+                          <a href="" class="service__link"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-1 service__wr service__wr_btn">
+                  <div class="service__item service__item_more">
+                    <svg class="service__icon" width="38" height="37">
+                      <use xlink:href="assets/img/sprite.svg#icon-srv"></use>
+                    </svg>
+                    Все услуги
+                    <a href="" class="service__link"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="modules tabs">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="title-h2 modules__title">Модули (составные решения)</h2>
+                  <div class="modules__nav modules-nav">
+                    <div class="modules-nav__button tabs__btn is-active" data-path="one">
+                      <div class="modules-nav__img">
+                        <img src="assets/img/modules-img.jpg" alt="Система Архивирования и Передачи Изображений (PACS)">
+                        <div class="modules-nav__overlay"></div>
+                      </div>
+                      <p class="modules-nav__caption">Система Архивирования и Передачи Изображений (PACS)</p>
+                    </div>
+                    <div class="modules-nav__button tabs__btn" data-path="two">
+                      <div class="modules-nav__img">
+                        <img src="assets/img/modules-img.jpg" alt="Интеграция информационных систем МИС, AI">
+                        <div class="modules-nav__overlay"></div>
+                      </div>
+                      <p class="modules-nav__caption">Интеграция информационных систем МИС, AI</p>
+                    </div>
+                    <div class="modules-nav__button tabs__btn" data-path="three">
+                      <div class="modules-nav__img">
+                        <img src="assets/img/modules-img.jpg" alt="Диагностическая Визуализация">
+                        <div class="modules-nav__overlay"></div>
+                      </div>
+                      <p class="modules-nav__caption">Диагностическая Визуализация</p>
+                    </div>
+                    <div class="modules-nav__button tabs__btn" data-path="four">
+                      <div class="modules-nav__img">
+                        <img src="assets/img/modules-img.jpg" alt="Мультимедийные изображения, хранящиеся в PACS">
+                        <div class="modules-nav__overlay"></div>
+                      </div>
+                      <p class="modules-nav__caption">Мультимедийные изображения, хранящиеся в PACS</p>
+                    </div>
+                    <div class="modules-nav__button tabs__btn" data-path="five">
+                      <div class="modules-nav__img">
+                        <img src="assets/img/modules-img.jpg" alt="Радиологическая Информационная система (РИС)">
+                        <div class="modules-nav__overlay"></div>
+                      </div>
+                      <p class="modules-nav__caption">Радиологическая Информационная система (РИС)</p>
+                    </div>
+                    <div class="modules-nav__button tabs__btn" data-path="six">
+                      <div class="modules-nav__img">
+                        <img src="assets/img/modules-img.jpg" alt="Бизнес Аналитика (BI)">
+                        <div class="modules-nav__overlay"></div>
+                      </div>
+                      <p class="modules-nav__caption">Бизнес Аналитика (BI)</p>
+                    </div>
+                    <div class="modules-nav__button tabs__btn" data-path="seven">
+                      <div class="modules-nav__img">
+                        <img src="assets/img/modules-img.jpg" alt="Cloud – сервисы">
+                        <div class="modules-nav__overlay"></div>
+                      </div>
+                      <p class="modules-nav__caption">Cloud – сервисы</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="modules__content modules-content tabs__content is-active" data-target="one">
+                      <p class="modules-content__caption">Система Архивирования и Передачи Изображений (PACS)</p>
+                      <p class="modules-content__description">AP/IX - Программно-аппаратный комплекс для автоматизации рабочего
+                        процесса получения, хранения, обработки, просмотра, маршрутизации диагностических медицинских
+                        изображений и данных. Основные Функции AP/IX: Прием, хранение, передача, поиск исследований, уникальная
+                        идентификация, автоматическое и ручное разрешение конфликтов, обеспечение информационной безопасности
+                        хранимых данных, обеспечение аудита действий пользователей</p>
+                      <button class="btn-reset btn modules-content__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="modules__content modules-content tabs__content" data-target="two">
+                      <p class="modules-content__caption">Интеграция информационных систем (МИС, AI)</p>
+                      <p class="modules-content__description">Успех реализации любого ИТ решения в клинике напрямую зависит от
+                        возможности «бесшовной» интеграции всех работающих систем, с учетом высоких требований к системам
+                        здравоохранения. Компания «Айтико» обладает более чем 20 летним опытом по проведению работ по интеграции
+                        всех цифровых систем клиники в единую платформу. Мы проводим оценку взаимосвязанности и функциональной
+                        совместимости между продуктом AP/IX и другим DICOM соответствующим оборудованием вашей клиники и,
+                        привлекая вендоров установленных систем и аппаратов, полностью отвечаем за двухстроннюю интеграцию.</p>
+                      <button class="btn-reset btn modules-content__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="modules__content modules-content tabs__content" data-target="three">
+                      <p class="modules-content__caption">Диагностическая Визуализация</p>
+                      <p class="modules-content__description">Наличие универсального кросс-платформенного веб-интерфейса
+                        диагностического просмотра результатов (изображений и заключений), реализованного по технологии Zero
+                        Footprint Viewer (не требует инсталляции какого-либо ПО на компьютере пользователя). XERO Viewer имеет в
+                        своем составе инструменты мультимодальной диагностической визуализации и обработки продвинутого
+                        уровня.</p>
+                      <button class="btn-reset btn modules-content__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="modules__content modules-content tabs__content" data-target="four">
+                      <p class="modules-content__caption">Мультимедийные изображения, хранящиеся в PACS</p>
+                      <p class="modules-content__description">Комплекс позволяет преобразовать любые мультимедиа данные в
+                        DICOM-совместимые, предоставить их для просмотра и сохранить в общий архив медицинских изображений.
+                        Комплекс позволяет управлять мультимедиа потоками в операционных, сохранять и преобразовывать в DICOM
+                        эндоскопические изображения, лапароскопические исследования.</p>
+                      <button class="btn-reset btn modules-content__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="modules__content modules-content tabs__content" data-target="five">
+                      <p class="modules-content__caption">Радиологическая Информационная система (РИС)</p>
+                      <p class="modules-content__description">Сервисы РИС (Радиологической Информационной Системы)</p>
+                      <button class="btn-reset btn modules-content__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="modules__content modules-content tabs__content" data-target="six">
+                      <p class="modules-content__caption">Бизнес Аналитика (BI)</p>
+                      <p class="modules-content__description">Модуль Бизнес Аналитики (BI ) предназначен для контроля
+                        использования диагностических ресурсов в лечебном учреждении.</p>
+                      <button class="btn-reset btn modules-content__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="modules__content modules-content tabs__content" data-target="seven">
+                      <p class="modules-content__caption">Cloud – сервисы</p>
+                      <p class="modules-content__description">AP\IX – готов к облаку!</p>
+                      <p class="modules-content__description"> Этот модуль касается планирования ваших потребностей в
+                        архивировании медицинских изображений, думая о возможном будущем росте исследований и изучая варианты
+                        облачного хранения.</p>
+                      <button class="btn-reset btn modules-content__btn">Узнать подробнее</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="modules-mobile">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h2 class="title-h2 modules__title">Модули (составные решения)</h2>
+                  <div id="accordion" class="modules-mobile__list">
+                    <div class="modules-mobile__item">
+                      <div id="headingOne" class="collapsed js-open-modules-mobile modules-mobile__open" data-toggle="collapse"
+                           data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <img src="assets/img/modules-img-mobile.jpg" alt="">
+                        <p class="modules-mobile__caption">Интеграция информационных систем МИС, AI</p>
+                        <div class="modules-mobile__overlay"></div>
+                        <button class="btn-reset modules-mobile__close">
+                          <svg width="16" height="16">
+                            <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                        <div class="card-body modules-mobile__content">
+                          <p class="modules-mobile__title">Система Архивирования и Передачи Изображений (PACS)</p>
+                          <p class="modules-mobile__description">AP/IX - Программно-аппаратный комплекс для автоматизации
+                            рабочего процесса получения, хранения, обработки, просмотра, маршрутизации диагностических
+                            медицинских изображений и данных. Основные Функции AP/IX: Прием, хранение, передача, поиск
+                            исследований, уникальная идентификация, автоматическое и ручное разрешение конфликтов, обеспечение
+                            информационной безопасности хранимых данных, обеспечение аудита действий пользователей</p>
+                          <button class="btn-reset btn modules-mobile__btn">Узнать подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modules-mobile__item">
+                      <div id="headingTwo" class="collapsed js-open-modules-mobile modules-mobile__open" data-toggle="collapse"
+                           data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <img src="assets/img/modules-img-mobile.jpg" alt="">
+                        <p class="modules-mobile__caption">Интеграция информационных систем МИС, AI</p>
+                        <div class="modules-mobile__overlay"></div>
+                        <button class="btn-reset modules-mobile__close">
+                          <svg width="16" height="16">
+                            <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                        <div class="card-body modules-mobile__content">
+                          <p class="modules-mobile__title">Интеграция информационных систем МИС, AI</p>
+                          <p class="modules-mobile__description">AP/IX - Программно-аппаратный комплекс для автоматизации
+                            рабочего процесса получения, хранения, обработки, просмотра, маршрутизации диагностических
+                            медицинских изображений и данных. Основные Функции AP/IX: Прием, хранение, передача, поиск
+                            исследований, уникальная идентификация, автоматическое и ручное разрешение конфликтов, обеспечение
+                            информационной безопасности хранимых данных, обеспечение аудита действий пользователей</p>
+                          <button class="btn-reset btn modules-mobile__btn">Узнать подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modules-mobile__item">
+                      <div id="headingThree" class="collapsed js-open-modules-mobile modules-mobile__open"
+                           data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                           aria-controls="collapseThree">
+                        <img src="assets/img/modules-img-mobile.jpg" alt="">
+                        <p class="modules-mobile__caption">Диагностическая Визуализация</p>
+                        <div class="modules-mobile__overlay"></div>
+                        <button class="btn-reset modules-mobile__close">
+                          <svg width="16" height="16">
+                            <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                        <div class="card-body modules-mobile__content">
+                          <p class="modules-mobile__title">Диагностическая Визуализация</p>
+                          <p class="modules-mobile__description">Наличие универсального кросс-платформенного веб-интерфейса
+                            диагностического просмотра результатов (изображений и заключений), реализованного по технологии Zero
+                            Footprint Viewer (не требует инсталляции какого-либо ПО на компьютере пользователя). XERO Viewer
+                            имеет в своем составе инструменты мультимодальной диагностической визуализации и обработки
+                            продвинутого уровня.</p>
+                          <button class="btn-reset btn modules-mobile__btn">Узнать подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" modules-mobile__item">
+                      <div id="headingFour" class="collapsed js-open-modules-mobile modules-mobile__open" data-toggle="collapse"
+                           data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                        <img src="assets/img/modules-img-mobile.jpg" alt="">
+                        <p class="modules-mobile__caption">Мультимедийные изображения, хранящиеся в PACS</p>
+                        <div class="modules-mobile__overlay"></div>
+                        <button class="btn-reset modules-mobile__close">
+                          <svg width="16" height="16">
+                            <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                        <div class="card-body modules-mobile__content">
+                          <p class="modules-mobile__title">Мультимедийные изображения, хранящиеся в PACS</p>
+                          <p class="modules-mobile__description">Комплекс позволяет преобразовать любые мультимедиа данные в
+                            DICOM-совместимые, предоставить их для просмотра и сохранить в общий архив медицинских изображений.
+                            Комплекс позволяет управлять мультимедиа потоками в операционных, сохранять и преобразовывать в
+                            DICOM эндоскопические изображения, лапароскопические исследования.</p>
+                          <button class="btn-reset btn modules-mobile__btn">Узнать подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" modules-mobile__item">
+                      <div id="headingFive" class="collapsed js-open-modules-mobile modules-mobile__open" data-toggle="collapse"
+                           data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                        <img src="assets/img/modules-img-mobile.jpg" alt="">
+                        <p class="modules-mobile__caption">Радиологическая Информационная система (РИС)</p>
+                        <div class="modules-mobile__overlay"></div>
+                        <button class="btn-reset modules-mobile__close">
+                          <svg width="16" height="16">
+                            <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="collapseFive" class="collapse" aria-labelledby="headingFive">
+                        <div class="card-body modules-mobile__content">
+                          <p class="modules-mobile__title">Радиологическая Информационная система (РИС)</p>
+                          <p class="modules-mobile__description">Сервисы РИС (Радиологической Информационной Системы)</p>
+                          <button class="btn-reset btn modules-mobile__btn">Узнать подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" modules-mobile__item">
+                      <div id="headingSix" class="collapsed js-open-modules-mobile modules-mobile__open" data-toggle="collapse"
+                           data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                        <img src="assets/img/modules-img-mobile.jpg" alt="">
+                        <p class="modules-mobile__caption">Бизнес Аналитика (BI)</p>
+                        <div class="modules-mobile__overlay"></div>
+                        <button class="btn-reset modules-mobile__close">
+                          <svg width="16" height="16">
+                            <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="collapseSix" class="collapse" aria-labelledby="headingSix">
+                        <div class="card-body modules-mobile__content">
+                          <p class="modules-mobile__title">Бизнес Аналитика (BI)</p>
+                          <p class="modules-mobile__description">Модуль Бизнес Аналитики (BI ) предназначен для контроля
+                            использования диагностических ресурсов в лечебном учреждении.</p>
+                          <button class="btn-reset btn modules-mobile__btn">Узнать подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modules-mobile__item">
+                      <div id="headingSeven" class="collapsed js-open-modules-mobile modules-mobile__open"
+                           data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true"
+                           aria-controls="collapseSeven">
+                        <img src="assets/img/modules-img-mobile.jpg" alt="">
+                        <p class="modules-mobile__caption">Cloud – сервисы</p>
+                        <div class="modules-mobile__overlay"></div>
+                        <button class="btn-reset modules-mobile__close">
+                          <svg width="16" height="16">
+                            <use xlink:href="assets/img/sprite.svg#icon-close-sm"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven">
+                        <div class="card-body modules-mobile__content">
+                          <p class="modules-mobile__title">Cloud – сервисы</p>
+                          <p class="modules-mobile__description">AP\IX – готов к облаку!</p>
+                          <p class="modules-mobile__description">Этот модуль касается планирования ваших потребностей в
+                            архивировании медицинских изображений, думая о возможном будущем росте исследований и изучая
+                            варианты облачного хранения.</p>
+                          <button class="btn-reset btn modules-mobile__btn">Узнать подробнее</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        
+        <section class="about">
+          <div class="container">
+            <div class="row align-items-end">
+              <div class="col-12 about__wr">
+                <h2 class="title-h2 about__title">О компании</h2>
+                <p class="about__text">ООО «Айтико» является авторизованным бизнес-партнером Agfa HealthCare по продаже и
+                  поддержке IT-решений в области здравоохранения – комплексных систем для информатизации ЛПУ.
+                  Мы обладаем уникальным подходом, который позволяет разрабатывать технологии в масштабе всего лечебного
+                  учреждения. Наши IT решения предназначены для обработки данных в радиологии, кардиологии, маммографии и
+                  ортопедии.</p>
+                <p class="about__text"> Наша компания стремиться популяризировать передовые технологии визуализации, хранения и
+                  постобработки с последующим доступом к ним. Целью является повышение качества диагностики и лечение пациентов,
+                  а так же упрощение процесса работы на всех уровнях.</p>
+              </div>
+              <div class="col-md-6 col-8 offset-lg-2">
+                <p class="about__quotes">”</p>
+                <p class="about__caption">Сотрудничество с Айтико — это обеспечение лучших условий с полноценными гарантийными
+                  обязательствами.</p>
+                <p class="about__text">Мы стремимся обеспечить бизнесу комфортное пространство для роста и развития, внедряя
+                  передовые системы и технологии будущего уже сегодня.</p>
+                <p class="about__text">Наш успех определяется успехами наших клиентов, которым мы помогаем опережать меняющиеся
+                  тенденции здравоохранения.</p>
+              </div>
+              <div class="col-lg-3 col-md-6 d-none d-md-block">
+                <img src="assets/img/about-man.png" alt="О компании">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="projects">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title-h2 projects__title">Проекты</h2>
+              </div>
+            </div>
+            <div class="row projects__row">
+              <div class="col-sm-6 col-lg-4">
+                <div class="projects__item">
+                  <img src="assets/img/pr-01.jpg" alt="">
+                  <div class="projects__description">
+                    <p><b>SaaS для частных медцентров</b></p>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="projects__item">
+                  <img src="assets/img/pr-02.jpg" alt="">
+                  <div class="projects__description">
+                    <p><b>Телерадиология и распределенный рабочий процесс</b></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="projects__item">
+                  <img src="assets/img/pr-03.jpg" alt="">
+                  <div class="projects__description">
+                    <p><b>Городская Клиническая больница №52., г. Москва</b></p>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="projects__item">
+                  <img src="assets/img/pr-04.jpg" alt="">
+                  <div class="projects__description">
+                    <p><b>Единый Радиологический Информационный Сервис (ЕРИС)</b></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="projects__item">
+                  <img src="assets/img/pr-05.jpg" alt="">
+                  <div class="projects__description">
+                    <p><b>ОКДЦ ПАО «Газпром»</b></p>
+        
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="projects__item">
+                  <img src="assets/img/pr-06.jpg" alt="">
+                  <div class="projects__description">
+                    <p><b>Городская Клиническая больница №52., г. Москва</b></p>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <a class="btn projects__btn">Все проекты</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
+        <!--honors-->
+        <section class="honors">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title-h2">Награды</h2>
+              </div>
+            </div>
+            <div class="row position-relative">
+              <div class="col-12 swiper honors-slider js-honors-slider">
+                <ul class="honors__list swiper-wrapper">
+                  <li class="honors__item swiper-slide">
+                    <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+                    <div>
+                      <div class="honors__heading">
+                        <p class="honors__caption">VI ФОРУМ Онлайн-диагностика 3.0
+                          БРОНЗОВЫЙ ПАРТНЕР</p>
+                        <p class="honors__year">2022</p>
+                      </div>
+                      <p class="honors__span">года</p>
+                    </div>
+                    <a class="honors__link" href="/files/online-diagnosys-2022.pdf" target="_blank"></a>
+                  </li>
+                  <li class="honors__item swiper-slide">
+                    <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+                    <div>
+                      <div class="honors__heading">
+                        <p class="honors__caption">Российский Диагностический саммит</p>
+                        <p class="honors__year">2022</p>
+                      </div>
+                      <p class="honors__span">года</p>
+                    </div>
+                    <a class="honors__link" href="/files/rds2022.pdf" target="_blank"></a>
+                  </li>
+                  <li class="honors__item swiper-slide">
+                    <img src="assets/img/honnor-img.png" alt="" class="honors__img">
+                    <div>
+                      <div class="honors__heading">
+                        <p class="honors__caption">Сателлитный симпозиум компании Айтико</p>
+                        <p class="honors__year">2022</p>
+                      </div>
+                      <p class="honors__span">года</p>
+                    </div>
+                    <a class="honors__link" href="/files/16-1712.pdf" target="_blank"></a>
+                  </li>
+        
+        
+                </ul>
+              </div>
+              <div class="slider-navigation slider-navigation_left honors__nav honors__nav-next">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+                </svg>
+              </div>
+              <div class="slider-navigation slider-navigation_right honors__nav honors__nav-prev">
+                <svg>
+                  <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+                </svg>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+        
+        <!-- Events -->
+        <section class="events section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="title-h2 events__title">Мероприятия</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-xl-10 offset-xl-1">
+                <ul class="events__list">
+                  <li class="events__item events__active">
+                    <a href="https://ormiz.ru/mvt/" target="_blank">
+                      <div class="events__inner">
+                        <img src="/assets/img/ormiz.ru.png" alt="" class="events__img">
+                        <div class="events__info">
+                          <div class="events__hidden">
+                            <p>Тема секции: "Интервенционная эндоскопия" (online мастер-класс). </p>
+                            <p>Онлайн выступление: «Возможности визуализации при проведении эндоскопических интервенций».</p>
+                          </div>
+                          <div class="events__date">17 мая 2023г</div>
+                          <p class="events__caption">Заседания секции "медицина высоких технологий"</p>
+                          <p class="events__status">онлайн</p>
+                          <div class="events__mobile">
+                            <a href="https://ormiz.ru/mvt/" class="events__btn" target="_blank">Зарегистрироваться</a>
+                            <button data-fancybox="e-info-8" data-src="#e-info-8" class="events__btn">Подробнее</button>
+                          </div>
+                          <div class="events__description content" id="e-info-8">
+                            <button type="button" class="btn-reset js-run-fullpage direction__close fancybox-close-small">
+                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="3.53657" width="5" height="30" rx="2.5" transform="rotate(-45 0 3.53657)"></rect>
+                                <rect x="3.53662" y="24.7487" width="5" height="30" rx="2.5"
+                                      transform="rotate(-135 3.53662 24.7487)"></rect>
+                              </svg>
+                            </button>
+                            <h2>ЗАСЕДАНИЯ СЕКЦИИ "МЕДИЦИНА ВЫСОКИХ ТЕХНОЛОГИЙ"</h2>
+                            <p>Тема секции Интервенционная эндоскопия (on-line мастер-класс). Он-лайн выступление- «Возможности
+                              визуализации при проведении эндоскопических интервенций».</p>
+                            <p>
+                              Трансляция по ссылке https://ormiz.ru/mvt/
+                            </p>
+                            <p>
+                              Организаторы: Ассоциация специалистов в области медицины высоких технологий
+                            </p>
+                            <p>
+                              Всероссийская мультимедийная конференция «Медицина высоких технологий» — это онлайн площадка для
+                              профессионалов, заинтересованных во внедрении передовых медицинских технологий в повседневную
+                              клиническую практику.
+                            </p>
+                          </div>
+                          <div class="events__near"><img src="/assets/img/near.svg" alt="" class="events__near-img"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="events__item">
+                    <a href="https://www.tomo.nsc.ru/mtc/" target="_blank">
+                      <div class="events__inner">
+                        <div class="events__hidden">
+                          <p>
+                            Сибирский симпозиум: "Современные внутриутробные диагностические технологии будущему поколению" (с
+                            межрегиональным и международным участием).</p>
+                          <p>Для специалистов лучевой диагностики и пренатальной диагностики.
+                          </p>
+                          <p>Место проведения симпозиума: ФГБУН Институт "Международный томографический центр" СО РАН
+                            г.Новосибирск, ул. Институтская, 3A
+                          </p>
+                        </div>
+        
+                        <img src="/assets/img/tomo.nsc.ru.png" alt="" class="events__img">
+                        <div class="events__info">
+                          <div class="events__date">август 2023</div>
+                          <p class="events__caption">Сибирский <br> симпозиум</p>
+                          <p class="events__status">очно</p>
+                          <div class="events__mobile">
+                            <a href="https://www.tomo.nsc.ru/mtc/" class="events__btn" target="_blank">Зарегистрироваться</a>
+                            <button data-fancybox="e-info-10" data-src="#e-info-10" class="events__btn">Подробнее</button>
+                          </div>
+                          <div class="events__description content" id="e-info-10">
+                            <button type="button" class="btn-reset js-run-fullpage direction__close fancybox-close-small">
+                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="3.53657" width="5" height="30" rx="2.5" transform="rotate(-45 0 3.53657)"></rect>
+                                <rect x="3.53662" y="24.7487" width="5" height="30" rx="2.5"
+                                      transform="rotate(-135 3.53662 24.7487)"></rect>
+                              </svg>
+                            </button>
+                            <h2>Сибирский симпозиум</h2>
+                            <p>
+                              Сибирский симпозиум: "Современные внутриутробные диагностические технологии будущему поколению" (с
+                              межрегиональным и международным участием).</p>
+                            <p>Для специалистов лучевой диагностики и пренатальной диагностики.
+                            </p>
+                            <p>Место проведения симпозиума: ФГБУН Институт "Международный томографический центр" СО РАН
+                              г.Новосибирск, ул. Институтская, 3A
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="events__item">
+                    <a href="https://rdsummit.ru/" target="_blank"></a>
+                      <div class="events__inner">
+                        <div class="events__hidden">
+                          <p>Место проведения: г. Москва, Крокус Экспо, павильон 2</p>
+                          <p>Крупнейшее выставочное пространство и площадка для конгресса в индустрии.</p>
+                          <p>Включает несколько мероприятий :</p>
+                          <ul>
+                            <li>- IX Российский конгресс лабораторной медицины</li>
+                            <li>- VI Итоговую конференцию МРО РОРР: «Лучевая диагностика»</li>
+                            <li>- Форум MIR: менеджмент в медицине</li>
+                          </ul>
+                        </div>
+        
+                        <img src="/assets/img/event-04-10.png" alt="" class="events__img">
+                        <div class="events__info">
+                          <div class="events__date">4-6 октября 2023г</div>
+                          <p class="events__caption">Российский диагностический саммит</p>
+                          <p class="events__status">очно</p>
+                          <div class="events__mobile">
+                            <button data-fancybox="e-info-10" data-src="#e-info-10" class="events__btn">Подробнее</button>
+                          </div>
+                          <div class="events__description content" id="e-info-10">
+                            <button type="button" class="btn-reset js-run-fullpage direction__close fancybox-close-small">
+                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="3.53657" width="5" height="30" rx="2.5" transform="rotate(-45 0 3.53657)"></rect>
+                                <rect x="3.53662" y="24.7487" width="5" height="30" rx="2.5"
+                                      transform="rotate(-135 3.53662 24.7487)"></rect>
+                              </svg>
+                            </button>
+                            <h2>Российский диагностический саммит</h2>
+                            <p>Крупнейшее выставочное пространство и площадка для конгресса в индустрии.</p>
+                            <p>Включает несколько мероприятий :</p>
+                            <ul>
+                              <li> IX Российский конгресс лабораторной медицины</li>
+                              <li> VI Итоговую конференцию МРО РОРР: «Лучевая диагностика»</li>
+                              <li> Форум MIR: менеджмент в медицине</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+        
+                  </li>
+                  <li class="events__item">
+        
+                    <div class="events__inner">
+                      <img src="/assets/img/event-14-12.png" alt="" class="events__img">
+                      <div class="events__info">
+                        <div class="events__hidden d-none">
+                        </div>
+                        <div class="events__date">14-16 декабря 2023г</div>
+                        <p class="events__caption">IX ФОРУМ Онлайн-диагностика 3.0</p>
+                        <p class="events__status">онлайн</p>
+                        <div class="events__mobile">
+                        </div>
+                        <div class="events__description content" id="e-info-7">
+                          <button type="button" class="btn-reset js-run-fullpage direction__close fancybox-close-small">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect y="3.53657" width="5" height="30" rx="2.5" transform="rotate(-45 0 3.53657)"></rect>
+                              <rect x="3.53662" y="24.7487" width="5" height="30" rx="2.5"
+                                    transform="rotate(-135 3.53662 24.7487)"></rect>
+                            </svg>
+                          </button>
+        
+                        </div>
+                      </div>
+                    </div>
+        
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="feedback feedback_main">
+          <div class="container">
+            <div class="row">
+              <div class="offset-xl-2 col-xl-8 col-lg-12">
+                <div class="feedback__wrapper">
+                  <div class="feedback__heading">
+                    <p class="feedback__caption">Если у вас возникли вопросы или хотите проконсультироваться, заполните данную
+                      форму</p>
+                  </div>
+                  <div class="feedback__content">
+                    <form action="" class="form feedback__form">
+                      <div class="form__group mb-3">
+                        <label for="name" class="form__label feedback__label">
+                          <input
+                            type="text"
+                            class="form__input"
+                            id="name"
+                            name="name"
+                            placeholder="Имя"
+                          >
+                        </label>
+                        <label for="phone" class="form__label feedback__label">
+                          <input
+                            type="tel"
+                            class="form__input phone-mask"
+                            id="phone"
+                            name="phone"
+                            placeholder="+7 (___) ___ - __ - __"
+                            inputmode="tel"
+                          >
+                        </label>
+                      </div>
+                      <div class="form__group mb-4">
+                        <label for="conf" class="checkbox__label">
+                          <input
+                            type="checkbox"
+                            class="checkbox form__checkbox feedback__checkbox js-enabled-submit"
+                            id="conf"
+                            name="conf"
+                          >
+                          <span class="checkbox__pane"></span>
+                          Я согласен(а) на <a href="">обработку персональных данных</a>
+                        </label>
+                      </div>
+                      <p class="feedback__subtitle">В подарок: презентация о системе <span>AP/IX</span></p>
+                      <button class="btn btn-rest form__submit feedback__btn" type="submit" disabled>Записаться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+    </main>
+    <div class="js-stop-header"></div>
+    <button class="button-up btn-reset js-up-button">
+      <svg width="30" height="29">
+        <use xlink:href="assets/img/sprite.svg#icon-up"></use>
+      </svg>
+    </button>
+    <footer class="footer">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col-3 col-lg-2 order-1 order-lg-0">
+            <a href="/" class="footer__logo logo">
+              <svg width="150" height="45">
+                <use xlink:href="assets/img/sprite.svg#logo"></use>
+              </svg>
+    <!--          <p class="logo__slogan">Разрабатываем с 2019 года</p>-->
+            </a>
+          </div>
+          <div class="col-lg-7 col-1  position-static">
+            <button class="burger btn-reset js-open-mobile-menu">
+              <span></span><span></span><span></span>
+            </button>
+            <nav class="nav header__nav js-mobile-menu">
+              <button class="btn-reset close js-close-mobile-menu">
+                <svg width="35" height="35">
+                  <use xlink:href="/assets/img/sprite.svg#icon-close"></use>
+                </svg>
+              </button>
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="" class="nav__link">Услуги</a>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Модули</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Проекты</a></li>
+                <li class="nav__item"><a href="" class="nav__link">Мероприятия</a></li>
+                <li class="nav__item nav__item nav__item_sub">
+                  <a href="" class="nav__link">О компании</a>
+                  <ul class="sub-menu">
+                    <li class="sub-menu__item"><a href="" class="sub-menu__link">О нас</a></li>
+                    <li class="sub-menu__item"><a href="" class="sub-menu__link">Новости</a></li>
+                  </ul>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-8 col-lg-3 col-md-8 order-2 order-lg-0">
+            <a href="tel:+74999597146" class="top-phone footer__phone">+7 499 959 71 46</a>
+            <a href="" class="btn btn-reset top-presentation footer__presentation">
+              <svg width="16" height="22">
+                <use xlink:href="assets/img/sprite.svg#icon-pdf"></use>
+              </svg>
+              <span>Скачать презентацию</span>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-between mb-4">
+          <div class="col-md-6">
+            <ul class="footer__contacts">
+              <li class="footer__item">Адрес: г. Москва, ул. Новодмитровская д2, корп. 1, эт 14 пом. XCII</li>
+              <li class="footer__item">ОГРН 1187746797655</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="footer__flex">
+              <a href="" class="footer__habr">
+                <img src="assets/img/habr-icon.png" alt="">
+                <svg width="96" height="14">
+                  <use xlink:href="assets/img/sprite.svg#habr"></use>
+                </svg>
+              </a>
+              <a href="mailto:info@aitico.ru" class="footer__mail">
+                <svg width="17" height="12">
+                  <use xlink:href="assets/img/sprite.svg#icon-mail"></use>
+                </svg>
+                info@aitico.ru
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-6">
+            <p class="footer__copyright">&copy; 2023 ООО «Айтико»</p>
+          </div>
+          <div class="col-6">
+            <p class="footer__copyright footer__copyright_right">Разработано в <a href="http://digital.tools/" target="_blank" rel="nofollow">Digital.Tools</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- build:js -->
+    <script src="assets/vendor/js/jquery.js"></script>
+    <script src="assets/vendor/js/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/js/swiper-bundle.js"></script>
+    <script src="assets/vendor/js/inputmask.min.js"></script>
+    <script src="assets/js/util/crossPlatform.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- endbuild -->
+    
+    
+</body>
+
+</html>
