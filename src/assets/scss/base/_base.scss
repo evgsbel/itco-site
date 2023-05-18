@@ -103,6 +103,12 @@ img {
   height: 24px;
   fill: $orange
 }
+.slider-navigation_white svg {
+  fill: #fff;
+}
+.slider-navigation_grey svg {
+  fill: $grey;
+}
 .slider-navigation_left {
   left: 0;
 }

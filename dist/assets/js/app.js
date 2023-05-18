@@ -75,7 +75,6 @@ $(document).ready(function () {
           }
           if (scrollDistance + headerHeight >= footerOffsetTop) {
             $header.removeClass('header_fixed');
-            $header.addClass('out');
           }
         };
         clearTimeout(timer);
@@ -101,12 +100,12 @@ var swiperHero = new Swiper(".js-hero-slider", {
   },
   parallax: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".hero-pagination",
     clickable: true
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".hero-button-next",
+    prevEl: ".hero-button-prev"
   }
 });
 
@@ -142,8 +141,8 @@ var swiperService = new Swiper(".js-service-slider", {
   slidesPerView: 3,
   speed: 900,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
+    nextEl: ".service-button-next",
+    prevEl: ".service-button-prev"
   },
   breakpoints: {
     320: {
@@ -155,6 +154,39 @@ var swiperService = new Swiper(".js-service-slider", {
       spaceBetween: 30
     },
     960: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+});
+
+// projects slider
+var swiperProjects = new Swiper(".js-projects-slider", {
+  grid: {
+    rows: 2,
+    fill: "row"
+  },
+  navigation: {
+    nextEl: ".projects-button-next",
+    prevEl: ".projects-button-prev"
+  },
+  spaceBetween: 30,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      grid: false
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      grid: false
+    },
+    576: {
+      grid: {
+        rows: 2,
+        fill: "row"
+      },
       slidesPerView: 3,
       spaceBetween: 30
     }

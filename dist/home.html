@@ -9,7 +9,7 @@
 		<title>Home Page</title>
     <!-- build:css -->
     <link rel="stylesheet" href="assets/vendor/css/animate.css">
-    <link rel="stylesheet" href="assets/vendor/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="assets/css/main.css">
 		<!-- endbuild -->
     <link rel="stylesheet" href="assets/css/rtl.css">
@@ -101,13 +101,13 @@
                       </div>
                     </div>
                     <div class="hero-slider__navigation">
-                      <div class="swiper-button-next">
+                      <div class="hero-button-next">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#nav-left"></use>
                         </svg>
                       </div>
-                      <div class="swiper-pagination hero-slider__pagination"></div>
-                      <div class="swiper-button-prev">
+                      <div class="hero-pagination hero-slider__pagination"></div>
+                      <div class="hero-button-prev">
                         <svg>
                           <use xlink:href="assets/img/sprite.svg#nav-right"></use>
                         </svg>
@@ -172,6 +172,16 @@
                           <a href="" class="service__link"></a>
                         </div>
                       </div>
+                    </div>
+                    <div class="slider-navigation slider-navigation_grey slider-navigation_left service-button-next">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+                      </svg>
+                    </div>
+                    <div class="slider-navigation slider-navigation_grey slider-navigation_right service-button-prev">
+                      <svg>
+                        <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -515,59 +525,57 @@
                 <h2 class="title-h2 projects__title">Проекты</h2>
               </div>
             </div>
-            <div class="row projects__row">
-              <div class="col-sm-6 col-lg-4">
-                <div class="projects__item">
+            <div class="projects__slider swiper js-projects-slider">
+              <div class="swiper-wrapper">
+                <div class=" swiper-slide projects__item">
                   <img src="assets/img/pr-01.jpg" alt="">
                   <div class="projects__description">
                     <p><b>SaaS для частных медцентров</b></p>
-        
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <div class="projects__item">
+                <div class=" swiper-slide projects__item">
                   <img src="assets/img/pr-02.jpg" alt="">
                   <div class="projects__description">
                     <p><b>Телерадиология и распределенный рабочий процесс</b></p>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <div class="projects__item">
+                <div class=" swiper-slide projects__item">
                   <img src="assets/img/pr-03.jpg" alt="">
                   <div class="projects__description">
                     <p><b>Городская Клиническая больница №52., г. Москва</b></p>
-        
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <div class="projects__item">
+                <div class=" swiper-slide projects__item">
                   <img src="assets/img/pr-04.jpg" alt="">
                   <div class="projects__description">
                     <p><b>Единый Радиологический Информационный Сервис (ЕРИС)</b></p>
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <div class="projects__item">
+                <div class=" swiper-slide projects__item">
                   <img src="assets/img/pr-05.jpg" alt="">
                   <div class="projects__description">
                     <p><b>ОКДЦ ПАО «Газпром»</b></p>
-        
                   </div>
                 </div>
-              </div>
-              <div class="col-sm-6 col-lg-4">
-                <div class="projects__item">
+                <div class=" swiper-slide projects__item">
                   <img src="assets/img/pr-06.jpg" alt="">
                   <div class="projects__description">
                     <p><b>Городская Клиническая больница №52., г. Москва</b></p>
-        
                   </div>
                 </div>
               </div>
+        
+                <div class="slider-navigation slider-navigation_white slider-navigation_left projects-button-next">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#nav-left"></use>
+                  </svg>
+                </div>
+                <div class="slider-navigation slider-navigation_white slider-navigation_right projects-button-prev">
+                  <svg>
+                    <use xlink:href="assets/img/sprite.svg#nav-right"></use>
+                  </svg>
+                </div>
+        
             </div>
             <div class="row">
               <div class="col-12">
@@ -744,45 +752,45 @@
                   </li>
                   <li class="events__item">
                     <a href="https://rdsummit.ru/" target="_blank"></a>
-                      <div class="events__inner">
-                        <div class="events__hidden">
-                          <p>Место проведения: г. Москва, Крокус Экспо, павильон 2</p>
+                    <div class="events__inner">
+                      <div class="events__hidden">
+                        <p>Место проведения: г. Москва, Крокус Экспо, павильон 2</p>
+                        <p>Крупнейшее выставочное пространство и площадка для конгресса в индустрии.</p>
+                        <p>Включает несколько мероприятий :</p>
+                        <ul>
+                          <li>- IX Российский конгресс лабораторной медицины</li>
+                          <li>- VI Итоговую конференцию МРО РОРР: «Лучевая диагностика»</li>
+                          <li>- Форум MIR: менеджмент в медицине</li>
+                        </ul>
+                      </div>
+        
+                      <img src="/assets/img/event-04-10.png" alt="" class="events__img">
+                      <div class="events__info">
+                        <div class="events__date">4-6 октября 2023г</div>
+                        <p class="events__caption">Российский диагностический саммит</p>
+                        <p class="events__status">очно</p>
+                        <div class="events__mobile">
+                          <button data-fancybox="e-info-10" data-src="#e-info-10" class="events__btn">Подробнее</button>
+                        </div>
+                        <div class="events__description content" id="e-info-10">
+                          <button type="button" class="btn-reset js-run-fullpage direction__close fancybox-close-small">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <rect y="3.53657" width="5" height="30" rx="2.5" transform="rotate(-45 0 3.53657)"></rect>
+                              <rect x="3.53662" y="24.7487" width="5" height="30" rx="2.5"
+                                    transform="rotate(-135 3.53662 24.7487)"></rect>
+                            </svg>
+                          </button>
+                          <h2>Российский диагностический саммит</h2>
                           <p>Крупнейшее выставочное пространство и площадка для конгресса в индустрии.</p>
                           <p>Включает несколько мероприятий :</p>
                           <ul>
-                            <li>- IX Российский конгресс лабораторной медицины</li>
-                            <li>- VI Итоговую конференцию МРО РОРР: «Лучевая диагностика»</li>
-                            <li>- Форум MIR: менеджмент в медицине</li>
+                            <li> IX Российский конгресс лабораторной медицины</li>
+                            <li> VI Итоговую конференцию МРО РОРР: «Лучевая диагностика»</li>
+                            <li> Форум MIR: менеджмент в медицине</li>
                           </ul>
                         </div>
-        
-                        <img src="/assets/img/event-04-10.png" alt="" class="events__img">
-                        <div class="events__info">
-                          <div class="events__date">4-6 октября 2023г</div>
-                          <p class="events__caption">Российский диагностический саммит</p>
-                          <p class="events__status">очно</p>
-                          <div class="events__mobile">
-                            <button data-fancybox="e-info-10" data-src="#e-info-10" class="events__btn">Подробнее</button>
-                          </div>
-                          <div class="events__description content" id="e-info-10">
-                            <button type="button" class="btn-reset js-run-fullpage direction__close fancybox-close-small">
-                              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect y="3.53657" width="5" height="30" rx="2.5" transform="rotate(-45 0 3.53657)"></rect>
-                                <rect x="3.53662" y="24.7487" width="5" height="30" rx="2.5"
-                                      transform="rotate(-135 3.53662 24.7487)"></rect>
-                              </svg>
-                            </button>
-                            <h2>Российский диагностический саммит</h2>
-                            <p>Крупнейшее выставочное пространство и площадка для конгресса в индустрии.</p>
-                            <p>Включает несколько мероприятий :</p>
-                            <ul>
-                              <li> IX Российский конгресс лабораторной медицины</li>
-                              <li> VI Итоговую конференцию МРО РОРР: «Лучевая диагностика»</li>
-                              <li> Форум MIR: менеджмент в медицине</li>
-                            </ul>
-                          </div>
-                        </div>
                       </div>
+                    </div>
         
                   </li>
                   <li class="events__item">
@@ -881,7 +889,7 @@
     <footer class="footer">
       <div class="container">
         <div class="row mb-4">
-          <div class="col-3 col-lg-2 order-1 order-lg-0">
+          <div class="col-8 col-sm-3 col-lg-2 order-1 order-lg-0">
             <a href="/" class="footer__logo logo">
               <svg width="150" height="45">
                 <use xlink:href="assets/img/sprite.svg#logo"></use>
@@ -889,7 +897,7 @@
     <!--          <p class="logo__slogan">Разрабатываем с 2019 года</p>-->
             </a>
           </div>
-          <div class="col-lg-7 col-1  position-static">
+          <div class="col-lg-7 col-sm-1 col-2  position-static">
             <button class="burger btn-reset js-open-mobile-menu">
               <span></span><span></span><span></span>
             </button>
@@ -917,8 +925,8 @@
               </ul>
             </nav>
           </div>
-          <div class="col-8 col-lg-3 col-md-8 order-2 order-lg-0">
-            <a href="tel:+74999597146" class="top-phone footer__phone">+7 499 959 71 46</a>
+          <div class="col-2 col-sm-8 col-lg-3 col-md-8 order-2 order-lg-0">
+            <a href="tel:+74999597146" class="top-phone footer__phone"><span>+7 499 959 71 46</span></a>
             <a href="" class="btn btn-reset top-presentation footer__presentation">
               <svg width="16" height="22">
                 <use xlink:href="assets/img/sprite.svg#icon-pdf"></use>
@@ -927,6 +935,12 @@
             </a>
           </div>
         </div>
+        <a href="" class="btn btn-reset top-presentation footer__presentation d-flex d-sm-none">
+          <svg width="16" height="22">
+            <use xlink:href="assets/img/sprite.svg#icon-pdf"></use>
+          </svg>
+          <span>Скачать презентацию</span>
+        </a>
         <div class="row justify-content-between mb-4">
           <div class="col-md-6">
             <ul class="footer__contacts">
