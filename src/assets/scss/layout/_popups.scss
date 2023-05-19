@@ -1,0 +1,47 @@
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__close {
+    left: 0;
+    top: 0;
+    position: relative;
+    color: $orange;
+    display: block;
+    opacity: 1;
+    font-size: 40px;
+    &:hover {
+      color: $grey;
+    }
+  }
+}
+.modal-content {
+  padding: 50px;
+  border-radius: 20px;
+  max-height: 80vh;
+
+}
+.modal-dialog {
+  width: 1440px;
+  max-width: 100%;
+}
+
+//custom scroll
+
+.simplebar-track.simplebar-vertical {
+  background-color: #d2d6dc;
+  width: 20px;
+}
+.simplebar-scrollbar::before {
+  background-color: #fff;
+  opacity: 1 !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 10px;
+  left: 5px;
+}

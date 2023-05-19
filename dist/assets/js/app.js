@@ -193,6 +193,60 @@ var swiperProjects = new Swiper(".js-projects-slider", {
   }
 });
 
+// reviews slider
+var swiperReviews = new Swiper(".js-reviews-slider", {
+  slidesPerView: 3,
+  speed: 900,
+  loop: true,
+  navigation: {
+    nextEl: ".reviews-button-next",
+    prevEl: ".reviews-button-prev"
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  }
+});
+
+// materials slider
+var swiperReviews = new Swiper(".js-materials-slider", {
+  slidesPerView: 5,
+  speed: 900,
+  loop: true,
+  navigation: {
+    nextEl: ".materials-button-next",
+    prevEl: ".materials-button-prev"
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 50
+    },
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 50
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50
+    }
+  }
+});
+
 // up button
 $(document).ready(function () {
   var buttonUp = $('.js-up-button');
@@ -215,4 +269,9 @@ $(document).ready(function () {
 $('.js-open-modules-mobile').on('click', function (e) {
   e.preventDefault();
   $(this).parent().toggleClass('is-open');
+});
+
+//custom scroll
+Array.prototype.forEach.call(document.querySelectorAll('.js-custom-scroll'), function (el) {
+  return new SimpleBar(el);
 });

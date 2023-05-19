@@ -48,7 +48,7 @@
   z-index: 100;
   padding-top: 40px;
   width: 100%;
-  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+  transition: all .3s ease-in-out;
   @include r(1024) {
     padding-top: 30px;
     padding-bottom: 10px;
@@ -190,8 +190,13 @@
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
+  background-color: #000;
   &.header_fixed {
+    background-color: rgba(19,41,62, 0.5);
     position: fixed;
     background-image: none;
+    padding-bottom: 0;
   }
 }
+
+
