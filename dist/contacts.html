@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="h-100">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Услуги</title>
+  <title>Контакты</title>
   <!-- build:css -->
   <link rel="stylesheet" href="assets/vendor/css/animate.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -16,10 +16,11 @@
   <link rel="stylesheet" href="assets/css/rtl.css">
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=980206ed-1a9c-4ded-ae92-47b1d149ffa9&lang=ru_RU" type="text/javascript">
-    </script>
+  </script>
 </head>
 
-<body class="is-service-page is-inner-page">
+<body class="is-contacts-page is-inner-page">
+<div id="map" ></div>
 <header class="header">
   <div class="container">
     <div class="row header__row">
@@ -80,94 +81,54 @@
       <div class="col-12">
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-          <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_active">Услуги</span>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__link breadcrumbs__link_active">Контакты</span>
           </li>
         </ul>
       </div>
     </div>
   </div>
 <main role="main" class="main">
+  <section class="contact-page">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="title-h1">Услуги</h1>
+        <h1 class="title-h1">Контакты</h1>
       </div>
     </div>
   </div>
-  <div class="content">
+  
+  
+  
+  <div class="contacts">
     <div class="container">
-      <div class="row mb-5">
+      <div class="row">
         <div class="col-12">
-          <p class="content__subtitle">Разрабатываем и внедряем эффективные алгоритмы. Совершенствуем существующих методы
-            диагностики.</p>
-        </div>
-      </div>
-      <div class="row align-items-center mb-100">
-        <div class="col-md-6">
-          <div class="content__img">
-            <img src="/assets/img/srv-01.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <h2>Поставка медицинских систем визуализации</h2>
-          <p>Интеграция клинических приложений с PACS и прочими системами. Сервисное обслуживание</p>
-          <div class="hr"></div>
-          <p> Быстрая работа с большими объемами данных. Оптимальная скорость сохранения протоколов, добавления услуг,
-            приема оплаты. Простая установка программы. Архивирование данных.</p>
-          <a href="" class="btn btn-reset">Подробнее об услуге</a>
-        </div>
-      </div>
-      <div class="row align-items-center mb-100">
-        <div class="col-md-6  order-1 order-md-0">
-          <h2>Интегрированные гибридные операционные</h2>
-          <p>Отображение видео со всех источников в операционной, на дисплее перед хирургом, а так же сохранение видео
-            хода операций и не только в PACS</p>
-          <div class="hr"></div>
-          <p>Чтобы обеспечить врачам во время операции максимальную точность, мы добились невозможного — видеосигнал с
-            камер на оборудовании передается на экраны по прямому подключению с задержкой, невидимой для человеческого
-            глаза.</p>
-          <a href="" class="btn btn-reset">Подробнее об услуге</a>
-        </div>
-        <div class="col-md-6 ">
-          <div class="content__img">
-            <img src="/assets/img/srv-02.jpg" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="row align-items-center mb-100">
-        <div class="col-md-6">
-          <div class="content__img">
-            <img src="/assets/img/srv-03.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <h2>Поставка медицинских систем визуализации</h2>
-          <p>PACS, работающий на облачных серверах, надёжное, современное и удобное в использовании решение вопроса
-            хранения и просмотра DICOM изображений</p>
-          <div class="hr"></div>
-          <p>Внедряйте инновации и совершайте научные открытия с помощью облачной платформы.</p>
-          <a href="" class="btn btn-reset">Подробнее об услуге</a>
-        </div>
-      </div>
-      <div class="row align-items-center mb-100">
-        <div class="col-md-6  order-1 order-md-0">
-          <h2>Интегрированные гибридные операционные</h2>
-          <p>В том числе помощь в подборе подходящей продукции и введение в эксплуатацию</p>
-          <div class="hr"></div>
-          <p> Чтобы обеспечить врачам во время операции максимальную точность, мы добились невозможного — видеосигнал с
-            камер на оборудовании передается на экраны по прямому подключению с задержкой, невидимой для человеческого
-            глаза.</p>
-          <a href="" class="btn btn-reset">Подробнее об услуге</a>
-        </div>
-        <div class="col-md-6">
-          <div class="content__img">
-            <img src="/assets/img/srv-04.jpg" alt="">
+          <div class="contacts__inner">
+            <div class="contacts__item">
+              <p class="contacts__caption">адрес центрального офиса</p>
+              <p class="contacts__description">г. Москва, ул. Новодмитровская д2, корп. 1, эт 14 пом. XCII</p>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__caption">телефон</p>
+              <a href="tel:+74999597146" class="contacts__description">+7 499 959 71 46</a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__caption">email</p>
+              <a href="mailto:info@aitico.ru" class="contacts__description contacts__description_blue">info@aitico.ru</a>
+            </div>
+            <div class="contacts__item">
+              <p class="contacts__caption">режим работы</p>
+              <p class="contacts__description contacts__description_upper">ПН-ПТ – 09:00-20:00  <span class="contacts__description_red">СБ-ВС – выходной</span></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   
+  
+  
+  </section>
   <section class="feedback">
     <div class="container">
       <div class="row">
@@ -221,6 +182,7 @@
       </div>
     </div>
   </section>
+
 </main>
 <div class="js-stop-header"></div>
 <button class="button-up btn-reset js-up-button">

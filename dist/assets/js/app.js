@@ -275,3 +275,44 @@ $('.js-open-modules-mobile').on('click', function (e) {
 Array.prototype.forEach.call(document.querySelectorAll('.js-custom-scroll'), function (el) {
   return new SimpleBar(el);
 });
+
+// Yandex карта
+// Функция ymaps.ready() будет вызвана, когда
+// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+ymaps.ready(init);
+function init() {
+  // Создание карты.
+  var myMap = new ymaps.Map("map", {
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [55.805007, 37.589931],
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 17
+    }),
+    // Создаём макет содержимого.
+    MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div class="map-logo">$[properties.iconContent]</div>'),
+    myPlacemarkWithContent = new ymaps.Placemark([55.805007, 37.589931], {
+      hintContent: 'г. Москва, ул. Новодмитровская д2, корп. 1, эт 14 пом. XCII',
+      balloonContent: 'г. Москва, ул. Новодмитровская д2, корп. 1, эт 14 пом. XCII',
+      iconContent: '<img  src="assets/img/sprite.svg#logo">'
+    }, {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#imageWithContent',
+      // Своё изображение иконки метки.
+      iconImageHref: 'assets/img/map-ball.png',
+      // Размеры метки.
+      iconImageSize: [14, 14],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [0, -60],
+      // Смещение слоя с содержимым относительно слоя с картинкой.
+      iconContentOffset: [5, -75],
+      // Макет содержимого.
+      iconContentLayout: MyIconContentLayout
+    });
+  myMap.geoObjects.add(myPlacemarkWithContent);
+}
