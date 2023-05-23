@@ -56,7 +56,6 @@ $(() => {
 });
 
 
-
 // fixed header
 $(document).ready(function () {
   $(function () {
@@ -250,16 +249,16 @@ var swiperReviews = new Swiper(".js-materials-slider", {
 });
 
 // up button
-$(document).ready(function() {
+$(document).ready(function () {
   var buttonUp = $('.js-up-button');
-  $(window).scroll (function () {
-    if ($(this).scrollTop () > 300) {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
       buttonUp.addClass('is-show');
     } else {
       buttonUp.removeClass('is-show');
     }
   });
-  buttonUp.on('click', function(){
+  buttonUp.on('click', function () {
     $('body, html').animate({
       scrollTop: 0
     }, 800);
@@ -284,17 +283,19 @@ Array.prototype.forEach.call(
 // Функция ymaps.ready() будет вызвана, когда
 // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
 ymaps.ready(init);
-function init(){
+
+function init() {
   // Создание карты.
   var myMap = new ymaps.Map("map", {
-    // Координаты центра карты.
-    // Порядок по умолчанию: «широта, долгота».
-    // Чтобы не определять координаты центра карты вручную,
-    // воспользуйтесь инструментом Определение координат.
-    center: [55.805007, 37.589931],
-    // Уровень масштабирования. Допустимые значения:
-    // от 0 (весь мир) до 19.
-    zoom: 17, }),
+      // Координаты центра карты.
+      // Порядок по умолчанию: «широта, долгота».
+      // Чтобы не определять координаты центра карты вручную,
+      // воспользуйтесь инструментом Определение координат.
+      center: [55.805007, 37.589931],
+      // Уровень масштабирования. Допустимые значения:
+      // от 0 (весь мир) до 19.
+      zoom: 17,
+    }),
     // Создаём макет содержимого.
     MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
       '<div class="map-logo">$[properties.iconContent]</div>'
@@ -324,3 +325,16 @@ function init(){
     .add(myPlacemarkWithContent);
 }
 
+// input name
+$(() => {
+  let jin = document.querySelector(".only-text");
+  jin.addEventListener('keydown', function (e) {
+    if (e.key.match(/[0-9]/)) return e.preventDefault();
+  }); // Будет перехватывать все числа при ручном вводе.
+// Тажке нужна, чтобы replace не сбрасывал каретку, срабатывая каждый раз.
+
+  jin.addEventListener('input', function (e) {
+    // На случай, если умудрились ввести через копипаст или авто-дополнение.
+    jin.value = jin.value.replace(/[0-9]/g, "");
+  });
+});

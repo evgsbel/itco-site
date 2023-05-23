@@ -28,7 +28,7 @@
     margin-left: 15px;
     padding-left: 15px;
     list-style-type: disc;
-
+    margin-bottom: 20px;
     &.list-blue {
       li {
         color: #4091DB;
@@ -835,6 +835,11 @@
   }
   .feedback__wrapper::before {
     background: linear-gradient(180deg, rgb(210 221 229) 0%, rgba(255, 255, 255, 0.4990371148) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  h1,
+  .breadcrumbs {
+    position: relative;
+    z-index: 100;
   }
 }
 

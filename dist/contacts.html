@@ -144,7 +144,7 @@
                   <label for="name" class="form__label feedback__label">
                     <input
                       type="text"
-                      class="form__input"
+                      class="form__input only-text"
                       id="name"
                       name="name"
                       placeholder="Имя"
@@ -279,6 +279,153 @@
     </div>
   </div>
 </footer>
+<div class="modal fade" id="pr-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog container content">
+    <div class="modal-content js-custom-scroll">
+      <div class="modal__heading">
+        <img src="assets/img/pr-logo-01.png" alt="">
+        <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <p class="content__subtitle">Медскан – сеть диагностических центров (4 центра) экспертного класса и
+            онкологический центр</p>
+          <p>Медицинские центры "Медскан" на Нижегородской улице, на Ленинградском шоссе, на Ильинском шоссе,
+            онкологический центр на улице Обручева.</p>
+          <p>Оборудование : MR томографы - Siemens Magnetom Area (1,5 Tesla) и Essenza (1,5 Tesla), CT томографы-
+            Siemens Perspective(128 и 64 slices), MG – Giotto, Цифровой рентген Italray Clinomat и лучевая терапия
+            на линейном ускорителе Varian TrueBeam.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img/prj-07.jpg" class="w-100" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="content__subtitle">До внедрения проекта:</p>
+          <ul>
+            <li>Оснащение клиник DICOM Архивом Singo.plaza, собирающем изображения из 4х центров и перегруженного
+              на момент начала проекта
+            </li>
+            <li>Расширенные функциональные возможности просмотра предоставляются веб-клиентами Singo.via</li>
+            <li>Отсутствие механизма маршрутизации задания просмотра и описания исследований радиологам, включая
+              телерадиологию (создание второго мнения)
+            </li>
+            <li>Отсутствие общей оркестровки рабочего процесса и функционала РИС ( радиологической
+              информационной
+            </li>
+            <li>системы)</li>
+            <li>Нет единого интерфейса для просмотра и создания заключений</li>
+            <li>Нет интеграции с МИС</li>
+            <li>Нет централизованного доступа врачам клиницистам к диагностическим изображениям</li>
+          </ul>
+          <div class="hr"></div>
+          <p class="content__subtitle">После внедрения проекта:</p>
+          <ul>
+            <li>Внедренные компоненты платформы PACS/RIS/Teleradiology Agfa Healthcare Enterprise Imaging:
+              Enterprise
+            </li>
+            <li>Imaging 8.1.2, программа просмотровщик XERO Xtend, Библиотека Обучающих файлов (TF), модуль
+              Бизнес
+            </li>
+            <li>аналитики (BI)</li>
+            <li>Организация рабочего процесса:PACS + RIS + Shared Workflow оркестровка – работа врачей
+              удаленно.
+            </li>
+            <li>Цифровой диагностический архив с объемом архивирования: 4500 исследований/ месяц</li>
+            <li>Пользователи: радиологи – 46, рентгенлаборанты-26</li>
+            <li>Прокси на каждом сайте</li>
+            <li>Универсальный веб-доступ к результатам (изображения + заключения) через XERO Viewer (Zero
+              Footprint
+            </li>
+            <li>Viewer) для врачей клиницистов</li>
+            <li>Передовые клинические инструменты для визуализации на каждой WS</li>
+            <li>HIS интеграция</li>
+            <li>Desktop интеграция с 3-партийным клиническим приложением Singo.via.</li>
+            <li>Возможность вызова Singo.via в контекстной синхронизацией с созданием заключений.</li>
+            <li>EPR интеграция через URL</li>
+            <li>Сохранение инвестиций в существующую инфраструктуру и Приложения. Произведена миграция данных
+              из
+            </li>
+            <li>предыдущего архива Syngo.plaza в Agfa EI. Подключение XERO Viewer к нескольким хранилищам DICOM (
+              Agfa
+            </li>
+            <li>EI и Singo plaza)</li>
+            <li>Интеграция с порталом врача и пациента</li>
+            <li>Авторизация Single Sign On & Ticketing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="module-01" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog container content">
+    <div class="modal-content js-custom-scroll">
+      <div class="modal__heading">
+        <p class="content__subtitle">СИСТЕМА АРХИВИРОВАНИЯ И ПЕРЕДАЧИ ИЗОБРАЖЕНИЙ (PACS)</p>
+        <button type="button" class="close modal__close btn-reset" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6">
+          <p>AP/IX - Программно-аппаратный комплекс для автоматизации рабочего процесса получения, хранения, обработки,
+            просмотра, маршрутизации диагностических медицинских изображений и данных.</p>
+          <p>Основные Функции AP/IX:</p>
+          <p>Прием, хранение, передача, поиск исследований, уникальная идентификация, автоматическое и ручное
+            разрешение конфликтов, обеспечение информационной безопасности хранимых данных, обеспечение аудита действий пользователей</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/img/mod-07.jpg" class="w-100" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="content__subtitle">Получение</p>
+          <ul>
+            <li>Обеспечивает прием и отображение изображений, поступивших с высокоспециализированных диагностических
+              устройств и цифровую обработку перед предоставлением пользователям для анализа.
+            </li>
+            <li>Поддержка приема, хранения, визуализации, передачи радиологических исследований в соответствии с
+              требованиями стандарта DICOM 3.0
+            </li>
+          </ul>
+          <p class="content__subtitle">Хранение</p>
+          <ul>
+            <li>Поддержка операционных классов DICOM (SOP Classes):</li>
+            <li>Поддержка хранения и отображения объектов: DICOM SR, DICOM KOS, DICOM GSPS,</li>
+          </ul>
+          <p class="content__subtitle">DICOM Encapsulated PDF</p>
+          <ul>
+            <li>Долгосрочное решение для архивирования, резервного копирования, восстановления данных исследований.
+            </li>
+            <li>Многоуровневое хранение и правила маршрутизации исследований, основанные на ваших требованиях.</li>
+            <li>Поддержка и управление жизненным циклом изображений</li>
+            <li>Сокращение объем ручных задач по архивированию исследований и поддержка оптимального использования
+              хранилища.
+            </li>
+          </ul>
+          <p>Передача Обеспечивает передачу исcледований по протоколу DICOM c диагностических устройств на сервер системы PACS, а также передачу исследований из стронних DICOM – архивов</p>
+          <p class="content__subtitle">DICOM Encapsulated PDF</p>
+          <ul>
+            <li>Работа с рабочими списками исследований</li>
+            <li>Работа с релевантными (предыдущими) исследованиями</li>
+            <li>Открытие изображений определенного исследования</li>
+            <li>Расширенный поиск исследований</li>
+            <li>Работа с внешними носителями (экспорт и импорт).</li>
+            <li>Мониторинг статуса задания</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- build:js -->
 <script src="assets/vendor/js/jquery.js"></script>
 <script src="assets/vendor/js/popper.js"></script>
